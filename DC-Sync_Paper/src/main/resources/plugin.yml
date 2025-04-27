@@ -1,0 +1,12 @@
+name: DC-Sync_Paper
+version: '1.0-SNAPSHOT'
+main: dev.femrene.dCSync_Paper.DCSync_Paper
+api-version: '1.20'
+prefix: DCS
+authors: [FemRene]
+description: desc
+website: https://femrene.dev/
+depend:
+  - LuckPerms
+commands:
+  verify:

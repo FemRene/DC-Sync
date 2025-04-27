@@ -1,0 +1,5 @@
+name: DC-Sync_BungeeCord
+version: '1.0-SNAPSHOT'
+main: dev.femrene.dCSync_BungeeCord.DCSync_BungeeCord
+author: FemRene
+description: desc

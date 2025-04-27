@@ -1,0 +1,34 @@
+# DC-Sync System Configuration
+# For Hex Color Codes and formatting visit: https://docs.advntr.dev/minimessage/format.html (COMING SOON)
+#
+# === Storage ===
+# Where you want to store your data?
+# mysql - On an online MySQL Server
+# mariadb - On an online MariaDB Server
+# h2 - in a .sql File
+# yml - directly in a yml file
+################################
+# ONLY MYSQL SUPPORTED FOR NOW #
+################################
+storageType: "mysql"
+# === MySQL & MariaDB ===
+mysql:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "your password"
+  database: "DC-Sync"
+  ssl: true
+# === H2 ===
+h2:
+  filename: "storage.sql"
+  username: "sa"
+  password: ""
+# === Discord ===
+discord:
+  BotToken: "your-token-here"
+  serverID: "000000000000000000"
+# === LuckPerms ===
+luckperms:
+  roleMeta: "dcGroup"
+  nameMeta: "dcPrefix"
