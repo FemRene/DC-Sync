@@ -3,6 +3,7 @@ package dev.femrene.dCSync_Paper.util;
 import dev.femrene.dCSync_Paper.DCSync_Paper;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberRoleAddEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberRoleRemoveEvent;
@@ -96,6 +97,7 @@ public class DCManager extends ListenerAdapter {
                         String dcPrefixFromGroup = lpManager.getDcPrefixFromGroup(grp);
                         Guild guild = jda.getGuildById(config.getString("discord.serverID"));
                         assert guild != null;
+                        System.out.println(guild.getRoleById(dcGroupIDFromGroup).getName());
                         guild.addRoleToMember(event.getMember(), guild.getRoleById(dcGroupIDFromGroup)).queue();
                         String grpP;
                         if(dcPrefixFromGroup == null)
